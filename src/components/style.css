@@ -3,5 +3,13 @@
     padding: 0;
     margin:0;
     font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #0F5298;
+}
+.main{
+    width:80%;
+    margin:0 auto;
+    text-align: center;
 
 }
