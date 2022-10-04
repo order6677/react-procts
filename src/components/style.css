@@ -13,3 +13,50 @@ body{
     text-align: center;
 
 }
+.heading h1{
+    color: #fafafa;
+    font-size:48px;
+    letter-spacing:1px;
+    padding-top: 2rem;
+    margin:1-rem;
+
+}
+.heading h4{
+    color: #fafafa;
+    font-size:23px;
+    letter-spacing:1px;
+    padding-top: 2rem;
+    margin:1-rem;
+}
+.search-bar{
+    margin:1rem 0;
+    width:400px;
+    height:40px;
+    border:none;
+    outline:none;
+    border-radius:1rem;
+    padding: 0.3rem 1rem;
+
+}
+.container{
+    width:80%;
+    margin:25px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap:2rem;
+}
+.card{
+    width:180px;
+    border-radius:1rem;
+    background-color: black;
+    padding: 5px;
+}
+img{
+    width:100%;
+    border-radius: 1rem 1rem 0 0;
+
+}
+.card h3{
+    color: white;
+    font-size: 18px;
+}
