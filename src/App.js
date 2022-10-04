@@ -1,13 +1,15 @@
-import react from 'react'
-import meal from './components/Meal';
-import './App.css';
+import React from 'react'
+import Meal from './components/Meal';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>you</h1>
+    <>
+    <Meal />
+    </>
       
-    </div>
+  
   );
 }
 

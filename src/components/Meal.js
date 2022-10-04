@@ -21,4 +21,4 @@ const Meal = () => {
     </>
   );
 };
-export default meal;
+export default Meal;
