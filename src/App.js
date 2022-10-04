@@ -1,5 +1,5 @@
 import react from 'react'
-import Navbar from './components/Navbar';
+import meal from './components/Meal';
 import './App.css';
 
 function App() {
