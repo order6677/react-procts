@@ -7,11 +7,15 @@ const Meal = () => {
   const [url, setUrl] = useState(
     "https:/www.themealdb.com/api/json/v1/1/search.php?f=a"
   );
+  const[item,setItem]=useState();
+  const[show,setShow]=useState(false);
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.Meals);
+        console.log(data.meals);
+        setItem(data.meals);
+        setShow(true);
       });
   }, [url]);
   return (
@@ -28,18 +32,11 @@ const Meal = () => {
           <input type="search" className="search-bar" />
         </div>
         <div className="container">
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
-          <MealItem />
+          
+          {
+               show ? <MealItem data={item}/>:"Not found"
+          }
+          
         </div>
         <div className="indexContainer">
           <Recipe />
