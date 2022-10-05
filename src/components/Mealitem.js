@@ -1,5 +1,6 @@
 import React from 'react'
- const Mealitem =()=>{
+ const Mealitem =({data})=>{
+  console.log(data)
   return (
     <>
 
