@@ -17,7 +17,10 @@ const Meal = () => {
         
       
       });
-  }, [url]);
+  }, [url])
+  const setIndex =(bet)=>{
+    setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?f=${bet}`)
+  }
   return (
     <>
       <div className="main">
@@ -38,7 +41,7 @@ const Meal = () => {
           }
         </div>
         <div className="indexContainer">
-          <Recipe />
+          <Recipe  betIndex={(bet)=>setIndex(bet)}/>
         </div>
       </div>
     </>
