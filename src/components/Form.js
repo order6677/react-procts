@@ -1,3 +1,5 @@
+import React from "react";
+
 function Form() {
   return (
     <div className="container">
@@ -11,8 +13,9 @@ function Form() {
             <label>email</label>
             <input type="text" name="email" placeholder="email"/>
             <label>password</label>
-            <input type="text" name="email" placeholder="email"/>
+            <input type="text" name="password" placeholder="password"/>
             </div>
+            <button className="fluid ui button blue">submit</button>
           </div>
         </div>
         
@@ -20,3 +23,5 @@ function Form() {
     </div>
   );
 }
+
+export default Form;
