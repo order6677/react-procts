@@ -1,8 +1,9 @@
+import React from "react";
 
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import  "./main.css"
-import Meal from "react";
+import  Form  from "react";
 
 
 function Navbar() {
@@ -13,6 +14,7 @@ function Navbar() {
 	};
 
 	return (
+        
         
 
         
@@ -33,10 +35,10 @@ function Navbar() {
 				<FaBars />
 			</button>
 		</header>
-
+       
         
 	);
-}
+} 
 
 export default Navbar;
 
