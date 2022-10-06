@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from"./components/Navbar";
 import Meal from './components/Meal';
 import "./components/style.css";
 import{Routes,Route}from "react-router-dom"
 import Recipeinfo from './components/Recipeinfo';
+import Navbar from"./components/Navbar";
 
 function App() {
   return (

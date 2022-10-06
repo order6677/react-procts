@@ -1,19 +1,42 @@
-import React from "react";
-import{faBars,faTimes} from "react-icons/fa";
-function navbar() {
-  return (
-    <nav>
-      <a href="/#">HOME</a>
-      <a href="/#">ADD RECIPE</a>
-      <a href="/#">SIGN UP</a>
-      <button>
-        <faTimes />
-      </button>
-      <faBars />
-      <button>
 
-      </button>
-    </nav>
-  );
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import  "./main.css"
+import Meal from "react";
+
+
+function Navbar() {
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle("responsive_nav");
+	};
+
+	return (
+        
+
+        
+		<header>
+			
+			<nav ref={navRef}>
+				<a href="/#">Home</a>
+				<a href="/#">add recipe</a>
+				<a href="/#">sign up</a>
+				
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button className="nav-btn" onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+
+        
+	);
 }
-export default navbar;
+
+export default Navbar;
+
