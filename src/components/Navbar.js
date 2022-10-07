@@ -1,44 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import  "./main.css"
-import  Form  from "react";
+const linkStyles = {
+  display: 'inline-block',
+  width: '50px',
+  padding: "12px",
+  margin: "0 6px 6px",
+  background: "blue",
+  textDecoration: "none",
+  color: "white"
+}
 
 
-function Navbar() {
-	const navRef = useRef();
+function NavBar() {
+  return (
+    <div className="header-container">
+      <NavLink to='/' exact style={linkStyles} activeStyle={{ background: 'darkblue' }}>Home</NavLink>
+      {/* <NavLink to='/add recipe' exact style={linkStyles} activeStyle={{ background: 'darkblue' }}>add recipe</NavLink>
+      <NavLink to='/sign up' exact style={linkStyles} activeStyle={{ background: 'darkblue' }}>sign up</NavLink>
+       */}
+    </div>
+  );
+}
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle("responsive_nav");
-	};
-
-	return (
-        
-        
-
-        
-		<header>
-			
-			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">add recipe</a>
-				<a href="/#">sign up</a>
-				
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button className="nav-btn" onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-       
-        
-	);
-} 
-
-export default Navbar;
-
+export default NavBar;

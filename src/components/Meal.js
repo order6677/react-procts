@@ -8,7 +8,7 @@ const Meal = () => {
   const [item,setItem]=useState("");
   const[show,setShow]=useState(false);
   const[search,setSearch]=useState("")
-
+ 
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
@@ -25,6 +25,7 @@ const Meal = () => {
   const searchRecipe=(evt)=>{
     if(evt.key==="Enter"){
       setUrl(`https:/www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
+      
     }
   }
   return (
@@ -33,8 +34,7 @@ const Meal = () => {
         <div className="heading">
           <h1>Search food recipe</h1>
           <h4>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo
+            welcome to bahaba recipe  
           </h4>
         </div>
         <div className="searchBox">
