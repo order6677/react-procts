@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-var id="";
+
 const Recipe = () => {
     const [item, setItem] = useState(); 
     const { recipeId } = useParams();
