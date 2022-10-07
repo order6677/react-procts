@@ -9,12 +9,7 @@ import Navbar from "./components/Navbar";
 
 
 function App() {     
-  const navigate= useNavigate()
   
-  const[foods,setfood]=useState([]);
-  
-  const addfood = food =>setfood([...foods,food])
-
   return (
      <Fragment>
       <Navbar></Navbar>
