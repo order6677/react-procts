@@ -1,12 +1,12 @@
 # RECIPE  APP
 
 Description:
-This  is a recipe app that displays differnt ways of cooking a meal this is best for the chefs and the people who love to cook also for those who like inventing new  
-cooking ways will be able to  benefit from here.
+This  is a recipe app that displays differnt a meals this is best for people who love to cook also for those who like inventing new  
+cooking methods will be able to  enjoy .
 
 ## Links
 
-- [Repo]("order6677.github.io/react-procts/")
+- [Repo]("https://order6677.github.io/react-procts/")
 
 
 
